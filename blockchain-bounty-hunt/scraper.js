@@ -15,5 +15,3 @@ request('https://blockchain.info/blocks/1525200000000?format=json',(req, res, bo
 request('https://blockchain.info/blocks/1525100000000?format=json',(req, res, body) => {
   fs.writeFileSync('./30.json', JSON.stringify(JSON.parse(body)))
 })
-
-app.listen(3000)
